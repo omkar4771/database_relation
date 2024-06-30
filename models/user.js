@@ -14,6 +14,7 @@ const userSchema = new Schema({
     username : String,
     addresses : [
         {
+            _id : false,
             location : String,
             city : String,
         },
@@ -32,9 +33,10 @@ const addUser =  async ()=>{
     });
 
     user1.addresses.push({
-        location :"askavadi",
-        city : "velhe",
+        location :"delhi",
+        city : "india",
     });
-    await user1.save();
+   let result =  await user1.save();
+   console.log(result);
 };
 addUser();
