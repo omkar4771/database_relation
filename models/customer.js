@@ -35,6 +35,7 @@ const addCustomer = async()=>{
     })
 }
 
+// for add data 
 // const addOrders = async ()=>{
 //     let res = await Order.insertMany([
 //         {item : "samosa", price : 15},
