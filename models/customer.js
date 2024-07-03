@@ -45,4 +45,3 @@ const addCustomer = async()=>{
 //     console.log(res);
 // };
 // addOrders();
-
